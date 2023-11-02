@@ -8,16 +8,16 @@ pipeline{
        choice choices: ['main', 'develop', 'test'], description: 'choose the branchName to deploy', name: 'branchName'
      }
     stages{
-        stage("Git Checkout") {
-            when {
-            expression{
-                params.branchName == "main"
-            }
-        }
-            steps{
-                git branch: 'main', credentialsId: 'git-creds', url: 'https://github.com/Tangala123/mvn-demo'
-            }
-        }
+        // stage("Git Checkout") {
+        //     when {
+        //     expression{
+        //         params.branchName == "main"
+        //     }
+        // }
+        //     steps{
+        //         git branch: 'main', credentialsId: 'git-creds', url: 'https://github.com/Tangala123/mvn-demo'
+        //     }
+        // }
         
         stage("Build") {
             when {
