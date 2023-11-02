@@ -2,7 +2,7 @@ pipeline{
     agent any
      environment {
         tomcat_ip = "172.31.29.151"
-        tomcat_user = "ec2-user"
+        tomcat_user = "ec2-user" 
      }
      parameters {
        choice choices: ['main', 'develop', 'test'], description: 'choose the branchName to deploy', name: 'branchName'
