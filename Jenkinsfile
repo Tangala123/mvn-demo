@@ -47,4 +47,13 @@ pipeline{
             }
         }
     }
+    post {
+      success {
+        echo "The build success when you deploy the code"
+    }
+      failure {
+         echo " The build failure when you deploy the code"
+    }
+}
+
 }
