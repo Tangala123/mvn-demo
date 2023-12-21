@@ -1,7 +1,7 @@
 pipeline{
     agent any
      environment {
-        tomcat_ip = "172.31.29.151"
+        tomcat_ip = "172.31.22.174"
         tomcat_user = "ec2-user" 
      }
      parameters {
